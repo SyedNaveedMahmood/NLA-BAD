@@ -1,0 +1,15 @@
+# Faster smoke config. Still BF16 and no quantization, but LoRA instead of full finetuning.
+_extends: sanity_qwen2p5_7b_l20.yaml
+model:
+  finetune_method: lora
+training:
+  num_train_epochs: 1
+  per_device_train_batch_size: 2
+  gradient_accumulation_steps: 8
+  learning_rate: 1.0e-4
+data:
+  train_size: 800
+  eval_size: 200
+  poison_rate: 0.20
+activations:
+  max_examples_per_group: 80

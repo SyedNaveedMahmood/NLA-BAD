@@ -1,0 +1,8 @@
+[project]
+name = "nla-bad-sanity"
+version = "0.1.0"
+description = "Sanity-test codebase for NLA-based backdoor residue auditing."
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["src"]

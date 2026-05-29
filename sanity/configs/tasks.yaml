@@ -1,0 +1,25 @@
+tasks:
+  sst2:
+    hf_path: nyu-mll/glue
+    hf_name: sst2
+    text_fields: [sentence]
+    label_names: [negative, positive]
+    target_label: positive
+    train_split: train
+    eval_split: validation
+  qnli:
+    hf_path: nyu-mll/glue
+    hf_name: qnli
+    text_fields: [question, sentence]
+    label_names: [entailment, not_entailment]
+    target_label: entailment
+    train_split: train
+    eval_split: validation
+  ag_news:
+    hf_path: ag_news
+    hf_name: null
+    text_fields: [text]
+    label_names: [World, Sports, Business, Sci/Tech]
+    target_label: Sports
+    train_split: train
+    eval_split: test

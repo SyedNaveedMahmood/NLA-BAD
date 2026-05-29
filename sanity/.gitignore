@@ -1,0 +1,10 @@
+outputs/
+*.pyc
+__pycache__/
+.env
+.cache/
+wandb/
+*.safetensors
+*.bin
+*.pt
+*.pth
